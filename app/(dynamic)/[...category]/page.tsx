@@ -6,7 +6,7 @@ import type { Product } from "@/app/components/product";
 export default async function CachedPage({
   params,
   searchParams,
-}: PageProps<"/plp-dynamic/[...category]">) {
+}: PageProps<"/[...category]">) {
   // Page uses connection() - fully dynamic SSR with content in initial HTML
   // supports query params for filters, sorting, etc.
   // With Suspense on <body> in layout (grouped by route), this blocks but dynamic content is in initial HTML
